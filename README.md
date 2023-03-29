@@ -18,8 +18,23 @@ This repository contains a `docker-compose.yml` that makes it easy to try out th
 - http://localhost:3001 (the patient web app)
 - http://localhost:3002 (the administration web app)
 
-## Flows implemented
-_TODO_ 
+## Interactions implemented
+The patient demo applications roughly implements the [The Patient Care Plan in operation](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA2/EA560.png) interactions, except all Questionnaries are always listed regardless of the responses already submitted.
+
+The administration demo applications implements the following:
+- Registering Episode of Care and giving Consent for a patient. See [this interaction diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA576.png).
+- Applying Care Plan to Patient. [Interaction diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA578.png).
+- Some parts of [Evaluation of Measurements](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA580.png) have also been implemented.
+
+## Recommended reading
+This [high level process overview](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/280559617/High+Level+Business+Flow) illustrates some of the core functionality of the infrastructure platform.
+
+A central part of the implementation concerns the [switching of context](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/270991361/Switching+Context), which is a security mechanism for granting access to relevant resources through the use of access tokens. Different resources and interactions require [specific contexts](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1695842461/Access+Control+in+eHealth+Services) depending on the type of user in question.
+
+Technical documentation on creating CarePlans and Episodes of Care:
+- [Enrolling a Patient in an Episode Of Care](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1662025729/Enrolling+a+Patient+in+an+Episode+Of+Care)
+- [Creating Care Plans](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1661141027/Creating+Care+Plans)
+
 
 ## Known limitations
 Login and security is currently not implemented in the demo projects. All authentication is hard coded and handleded automatically in the BFF projects. The Patient Web App is currently hard coded to use a specific patientId for all actions.
