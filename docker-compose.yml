@@ -1,0 +1,29 @@
+version: '3.7'
+services:
+  fut-patient-bff:
+    image: kvalitetsit/fut-patient-bff:5a32ad7b890655051ac84f06d53518dbceaedb1c
+    ports: 
+      - 8081:8080
+    environment:
+      - ALLOWED_ORIGINS=http://localhost:3001
+  
+  fut-patient-web:
+    image: kvalitetsit/fut-patient-web:4291f58fa7ec66a0bf5e63f221ba0a42e3c2b1fe
+    ports: 
+      - 3001:80
+    environment:
+      - REACT_APP_API_BASEURL=http://localhost:8081/v1/
+
+  fut-medarbejder-bff:
+    image: kvalitetsit/fut-medarbejder-bff:998ce732eca1476e0a8a722b7494a44652f58e4f
+    ports: 
+      - 8082:8080
+    environment:
+      - ALLOWED_ORIGINS=http://localhost:3002
+
+  fut-medarbejder-web:
+    image: kvalitetsit/fut-medarbejder-web:e1f8495c4038c478331b3474c48e5272f3945bfe
+    ports: 
+      - 3002:80
+    environment:
+      - REACT_APP_API_BASEURL=http://localhost:8082/v1/
