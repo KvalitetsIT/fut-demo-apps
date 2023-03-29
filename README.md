@@ -1,5 +1,5 @@
 # FUT Demo Apps
-Apps that demonstrate the use of the [eHealth Infrastructure](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/overview). The infrastructure API is based on the [FHIR](https://fhir.org/) specifications. The demo apps follow the Backend for frontend (BFF) pattern. Backends projects are based on Java Spring Boot and frontend projects are based on React. The Java projects utilizes the [HAPI FHIR](https://hapifhir.io/) Java client library for communicating with the eHealth Infrastructure REST servers.
+Apps that demonstrate the use of the [eHealth Infrastructure](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/overview). The infrastructure API is based on the [FHIR](https://fhir.org/) specifications. The demo apps follow the Backend for frontend (BFF) pattern. Backend projects are based on Java Spring Boot and frontend projects are based on React. The Java projects utilizes the [HAPI FHIR](https://hapifhir.io/) Java client library for communicating with the eHealth Infrastructure REST servers.
 
 ## List of apps
 - [FUT Patient Demo BFF](https://github.com/kvalitetsIT/fut-patient-bff)
