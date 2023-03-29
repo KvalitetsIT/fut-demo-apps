@@ -21,7 +21,7 @@ This repository contains a `docker-compose.yml` that makes it easy to try out th
 ## Interactions implemented
 The patient demo applications roughly implements the [The Patient Care Plan in operation](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA2/EA560.png) interactions, except all Questionnaries are always listed regardless of the responses already submitted.
 
-The administration demo applications implements the following:
+The administration demo applications implement the following:
 - Registering Episode of Care and giving Consent for a patient. See [this interaction diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA576.png).
 - Applying Care Plan to Patient. [Interaction diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA578.png).
 - Some parts of [Evaluation of Measurements](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA580.png) have also been implemented.
