@@ -4,24 +4,24 @@ Apps that demonstrate the use of the Danish [eHealth Infrastructure](https://ehe
 ## List of apps
 - [FUT Patient Demo BFF](https://github.com/kvalitetsIT/fut-patient-bff)
 - [FUT Patient Demo Web App](https://github.com/kvalitetsIT/fut-patient-web)
-- [FUT Administration Demo BFF](https://github.com/kvalitetsIT/fut-medarbejder-bff)
-- [FUT Administration Demo Web App](https://github.com/kvalitetsIT/fut-medarbejder-web)
+- [FUT Employee Demo BFF](https://github.com/kvalitetsIT/fut-medarbejder-bff)
+- [FUT Employee Demo Web App](https://github.com/kvalitetsIT/fut-medarbejder-web)
 
 ### FUT Patient Demo
 The FUT Patient Demo demonstrates retrieving and displaying [Questionnaries](https://www.hl7.org/fhir/questionnaire.html) and sending [QuestionnarieResponse](https://www.hl7.org/fhir/questionnaireresponse.html).
 
-### FUT Administration Demo
-The FUT Administration Demo demonstrates retrieving Episodes of Care, Patients, Tasks, creating consent, creating CarePlans, among other things.
+### FUT Employee Demo
+The FUT Employee Demo demonstrates retrieving Episodes of Care, Patients, Tasks, creating consent, creating CarePlans, among other things.
 
 ## Try it out
 This repository contains a `docker-compose.yml` that makes it easy to try out the projects. All repositories and docker images are public. Use `docker-compose up`, and you can try the apps on the following ports:
 - http://localhost:3001 (the patient web app)
-- http://localhost:3002 (the administration web app)
+- http://localhost:3002 (the emplyee web app)
 
 ## Interactions implemented
 The patient demo applications roughly implements the [The Patient Care Plan in operation](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA2/EA560.png) interactions, except all Questionnaries are always listed regardless of the responses already submitted.
 
-The administration demo applications implement the following:
+The emplyee demo applications implement the following:
 - Registering Episode of Care and giving Consent for a patient. See [this interaction diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA576.png).
 - Applying Care Plan to Patient. [Interaction diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA578.png).
 - Some parts of [Evaluation of Measurements](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA580.png) have also been implemented.
