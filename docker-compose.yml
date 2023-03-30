@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   fut-patient-bff:
-    image: kvalitetsit/fut-patient-bff:5a32ad7b890655051ac84f06d53518dbceaedb1c
+    image: kvalitetsit/fut-patient-bff:98826b469490ee76cb5435df74c0b07c9d9a0cdf
     ports: 
       - 8081:8080
     environment:
