@@ -29,6 +29,8 @@ The administration demo applications implement the following:
 ## Recommended reading
 This [high level process overview](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/280559617/High+Level+Business+Flow) illustrates some of the core functionality of the infrastructure platform.
 
+This [UML Class diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA5/EA1/EA1/EA257.png) shows the FHIR resources used and their relations.
+
 A central part of the implementation concerns the [switching of context](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/270991361/Switching+Context), which is a security mechanism for granting access to relevant resources through the use of access tokens. Different resources and interactions require [specific contexts](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1695842461/Access+Control+in+eHealth+Services) depending on the type of user in question.
 
 Technical documentation on creating CarePlans and Episodes of Care:
