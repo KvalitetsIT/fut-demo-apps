@@ -16,12 +16,12 @@ The FUT Employee Demo demonstrates retrieving Episodes of Care, Patients, Tasks,
 ## Try it out
 This repository contains a `docker-compose.yml` that makes it easy to try out the projects. All repositories and docker images are public. Use `docker-compose up`, and you can try the apps on the following ports:
 - http://localhost:3001 (the patient web app)
-- http://localhost:3002 (the emplyee web app)
+- http://localhost:3002 (the employee web app)
 
 ## Interactions implemented
 The patient demo applications roughly implements the [The Patient Care Plan in operation](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA2/EA560.png) interactions, except all Questionnaries are always listed regardless of the responses already submitted.
 
-The emplyee demo applications implement the following:
+The employee demo applications implement the following:
 - Registering Episode of Care and giving Consent for a patient. See [this interaction diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA576.png).
 - Applying Care Plan to Patient. [Interaction diagram](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA578.png).
 - Some parts of [Evaluation of Measurements](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA3/EA580.png) have also been implemented.
