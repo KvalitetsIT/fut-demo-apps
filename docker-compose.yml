@@ -6,6 +6,10 @@ services:
       - 8081:8080
     environment:
       - ALLOWED_ORIGINS=http://localhost:3001
+#      - FUT_AUTH_USERNAME=username
+#      - FUT_AUTH_PASSWORD=password
+#      - FUT_PATIENT_CPR=1110109996
+#      - E_HEALTH_ENV=devenv
   
   fut-patient-web:
     image: kvalitetsit/fut-patient-web:4291f58fa7ec66a0bf5e63f221ba0a42e3c2b1fe
@@ -20,6 +24,9 @@ services:
       - 8082:8080
     environment:
       - ALLOWED_ORIGINS=http://localhost:3002
+#      - FUT_AUTH_USERNAME=username
+#      - FUT_AUTH_PASSWORD=password
+#      - E_HEALTH_ENV=devenv
 
   fut-medarbejder-web:
     image: kvalitetsit/fut-medarbejder-web:e1f8495c4038c478331b3474c48e5272f3945bfe
