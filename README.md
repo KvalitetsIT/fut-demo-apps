@@ -18,6 +18,8 @@ This repository contains a `docker-compose.yml` that makes it easy to try out th
 - http://localhost:3001 (the patient web app)
 - http://localhost:3002 (the employee web app)
 
+Environment variables can be set in the docker compose file to specify credentials for the employee and the patient, which environment to use, and which patient to use in the patient apps. See the compose file for examples.
+
 ## Interactions implemented
 The patient demo applications roughly implements the [The Patient Care Plan in operation](http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/latest-released/sparx/EARoot/EA6/EA3/EA2/EA560.png) interactions, except all Questionnaries are always listed regardless of the responses already submitted.
 
